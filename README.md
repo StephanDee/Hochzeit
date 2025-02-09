@@ -1,2 +1,1 @@
-# Hochzeit
-Stephan &amp; Yongs Hochzeit
+View Wedding Website: [stephandee.github.io/Hochzeit/](https://stephandee.github.io/Hochzeit/)

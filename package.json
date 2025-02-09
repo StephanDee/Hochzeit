@@ -1,0 +1,24 @@
+{
+  "name": "hochzeit",
+  "version": "1.0.0",
+  "description": "View CV: [stephandee.github.io/CurriculumVitae/](https://stephandee.github.io/Hochzeit/)",
+  "main": "index.html",
+  "dependencies": {
+    "angular-material": "^1.1.18",
+    "angular": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanDee/Hochzeit.git"
+  },
+  "author": "Stephan Dünkel",
+  "license": "Apache-Lincense2.0",
+  "bugs": {
+    "url": "https://github.com/StephanDee/Hochzeit/issues"
+  },
+  "homepage": "https://github.com/StephanDee/Hochzeit#readme"
+}

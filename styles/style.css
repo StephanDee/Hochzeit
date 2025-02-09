@@ -1,0 +1,233 @@
+body {
+    margin: 0 0 0 0;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12pt;
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #000000;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: url('../assets/header_bg.jpg') no-repeat center center / cover;
+    /*background: -webkit-linear-gradient(top left, #f44250 0%, #ffc371 100%) no-repeat center center / cover;*/
+    -webkit-box-shadow: 0 -3px 14px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 -3px 14px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 -3px 14px 0 rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+main {
+}
+
+footer {
+    padding: 50px 20px 50px 20px;
+    background-color: darkgrey;
+}
+
+textarea {
+    resize: none;
+}
+
+.header_box {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_content {
+    text-align: center;
+    color: white;
+}
+
+.header__avatar {
+    vertical-align: middle;
+    margin: 10px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation-name: header__avatar_animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes header__avatar_animation {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 250px;
+        height: 250px;
+    }
+    100% {
+        width: 230px;
+        height: 230px;
+    }
+}
+
+.header__text {
+    opacity: 1;
+    animation-name: header__text_animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes header__text_animation {
+    0%, 25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main__text_center {
+    text-align: center;
+}
+
+.main__content_in_viewport {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.main__content_in_viewport_visible {
+    opacity: 1;
+    animation-name: main__content_in_viewport_animation;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes main__content_in_viewport_animation {
+    0% {
+        margin-right: 100px;
+    }
+    100% {
+        margin: 0 0 0 0;
+    }
+}
+
+.main__article_container {
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.main__article {
+    padding: 20vh 0 20vh 0;
+}
+
+.main__article:nth-child(2n+0) {
+    background-color: lightgrey;
+}
+
+.main__article_content {
+    margin: auto;
+    padding: 0 8px 0 8px;
+    max-width: 850px;
+}
+
+.main__article_content_center, .main__article_content_flexstart, .main__article_content_flexend, .main__article_content_spacearound,
+.footer__center_wrapper {
+    display: flex;
+}
+
+.main__article_content_center {
+    justify-content: center;
+}
+
+.main__article_content_flexstart {
+    justify-content: flex-start;
+}
+
+.main__article_content_flexend {
+    justify-content: flex-end;
+}
+
+.main__article_content_spacearound {
+    justify-content: space-around;
+}
+
+.footer__email_formular {
+    background-color: white;
+    max-width: 400px;
+    padding: 20px;
+    margin-bottom: 70px;
+}
+
+.footer__center_wrapper {
+    justify-content: center;
+}
+
+.footer__link {
+    margin: 8px;
+}
+
+.text_color_black {
+    color: black;
+}
+
+.input_width {
+    width: 100% !important;
+}
+
+.carousel_image_size {
+    vertical-align: middle;
+    object-fit: cover;
+    height: 500px;
+    width: 100vw;
+}
+
+.language_bar_de {
+    background-color: dodgerblue;
+    width: 125px;
+    padding: 5px;
+}
+
+.language_bar_en {
+    background-color: dodgerblue;
+    border-right: 35px solid grey;
+    width: 125px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 849px) {
+    .main__article_content {
+        margin: auto;
+        padding: 0 8px 0 8px;
+        max-width: 400px;
+    }
+
+    .main__article_content_spacearound, .main__article_content_center {
+        display: block;
+    }
+
+    .main__text_center {
+        text-align: start;
+    }
+
+    .main__content_in_viewport {}
+
+    .main__content_in_viewport_visible {}
+
+    @keyframes main__content_in_viewport_animation {}
+}
