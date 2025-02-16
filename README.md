@@ -18,7 +18,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ## GitHub server
 
-To upload to server and start redeployment, run:
+To upload to the server and start redeployment, run:
 
 * <b>Step 1:</b> Run scripts "build" from package.json
 * <b>Step 2:</b> npx angular-cli-ghpages --dir=dist/hochzeit
