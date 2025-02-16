@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href https://stephandee.github.io/Hochzeit/",
+    "publish": "npx angular-cli-ghpages --dir=dist/hochzeit",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:hochzeit": "node dist/hochzeit/server/server.mjs"

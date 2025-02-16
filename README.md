@@ -23,7 +23,7 @@ To upload to the server and start redeployment, run:
 * <b>Step 1:</b> Run scripts "build" from package.json
 * <b>Step 2:</b> npx angular-cli-ghpages --dir=dist/hochzeit
 * <b>Step 3:</b> Go to https://github.com/StephanDee/Hochzeit/settings/pages
-* <b>Step 4:</b> Run redeployment from branch gh-pages - root
+* <b>Step 4:</b> Setup deployment from branch gh-pages - root
 
 ## Code scaffolding
 
