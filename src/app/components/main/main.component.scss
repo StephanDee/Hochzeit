@@ -1,11 +1,8 @@
 // Add background for different screen sizes
 
 main {
-    height: 10000px;
     padding: 1rem;
-    display: flex;
-    justify-content: start;
-    background-image: url("../../../../public/hochzeit-main-bg.png");
+    // background-image: url("../../../../public/hochzeit-main-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;

@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   standalone: false,
   styleUrl: './app.component.scss'
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor() {
+    alert('Die Seite befindet sich noch im Aufbau.');
+  }
+}
