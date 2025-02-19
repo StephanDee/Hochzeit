@@ -1,0 +1,10 @@
+<p-galleria #PrimengGalleriaContainer [value]="images" [autoPlay]="autoplay" [showThumbnails]="showThumbnails"
+  [showItemNavigators]="showItemNavigators" [circular]="true" [responsiveOptions]="responsiveOptions"
+  [numVisible]="numVisible" [containerStyle]="containerStyle">
+  <ng-template #item let-item>
+    <img [src]="item.itemImageSrc" style="width: 100%; display: block" />
+  </ng-template>
+  <ng-template #thumbnail let-item>
+    <img [src]="item.thumbnailImageSrc" style="width: 100%; display: block" />
+  </ng-template>
+</p-galleria>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonUtilsService } from '../../shared/services/common-utils.service';
 
 @Component({
   selector: 'app-main',
@@ -7,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  title = 'hochzeit';
+  protected title = 'hochzeit';
+  protected pgImages = [];
 
-  constructor() { }
+  constructor(protected commonUtilsService: CommonUtilsService/* protected imageService: ImageService */) { }
 
   ngOnInit() {
+    this.commonUtilsService.countdownTimer('08/02/2025 5:00 PM', 'countdown');
+    // this.images = this.imageService.getImages().filter((image) => image.itemImageSrc.contains('xxxx.jpg') || image.itemImageSrc.contains('xxxx.jpg'));
   }
-
 }

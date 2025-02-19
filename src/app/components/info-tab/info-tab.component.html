@@ -1,0 +1,50 @@
+<mat-tab-group animationDuration="1000ms">
+  <mat-tab [label]="tab1">
+    <div style="width: 90vw"></div>
+    <p>Schreib uns eine Nachricht falls du uns zu- oder absagen möchtest.</p>
+    <form [formGroup]="formGroup" class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Dein Vor und Nachname oder als Familie nur Nachname</mat-label>
+        <input matInput [formControl]="nameFormControl" placeholder="Max Mustermann / Mustermann">
+      </mat-form-field>
+      <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Message Selection">
+        @for (message of messageSelection; track message) {
+        <mat-chip-option [selected]="message.selected"
+          (selectionChange)="onSelectionChange($event)">{{message.selection}}</mat-chip-option>
+        }
+      </mat-chip-listbox>
+      <mat-form-field class="example-full-width">
+        <mat-label>Betreff</mat-label>
+        <input matInput [formControl]="subjectFormControl" placeholder="Zusage / Absage">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Deine Nachricht an uns</mat-label>
+        <textarea rows="6" matInput [formControl]="messageFormControl"
+          placeholder="Sehr gerne sage ich zu! / Sehr gerne sagen wir zu!"></textarea>
+      </mat-form-field>
+    </form>
+
+    <button mat-fab extended style="margin: 1rem" [disabled]="!isFormGroupValid(formGroup.status)">
+      <mat-icon>favorite</mat-icon>
+      Abschicken
+    </button>
+  </mat-tab>
+  <mat-tab [label]="tab2">
+    <div style="width: 90vw"></div>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+  </mat-tab>
+  <mat-tab [label]="tab3">
+    <div style="width: 90vw"></div>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+    <p>test</p>
+  </mat-tab>
+</mat-tab-group>
