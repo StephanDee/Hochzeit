@@ -1,10 +1,12 @@
 <mat-tab-group animationDuration="1000ms">
   <mat-tab [label]="tab1">
-    <div style="width: 90vw"></div>
-    <p>Schreib uns eine Nachricht falls du uns zu oder absagen möchtest.</p>
-    <form [formGroup]="formGroup" class="example-form">
+    <div style="width:90vw"></div>
+    <form [formGroup]="formGroup" class="example-form center">
+      <br>
+      <p>Schreib uns eine Nachricht falls du dich, deine Begleitung oder deine Familie an oder abmelden möchtest.</p>
+      <br>
       <mat-form-field class="example-full-width">
-        <mat-label>Vor und Nachnamen aller Personen die du an oder abmelden möchtest</mat-label>
+        <mat-label>Vor und Nachnamen aller Personen</mat-label>
         <textarea matInput formControlName="names" minLength="3" maxlength="200" rows="5"
           placeholder="Max Mustermann,&#10;Petra Mustermann,&#10;..."></textarea>
       </mat-form-field>
@@ -12,12 +14,15 @@
         <mat-label>Personen Anzahl</mat-label>
         <input matInput formControlName="count" maxlength="2" min="1" max="5" type="number" placeholder="1">
       </mat-form-field>
-      <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Message Selection">
-        @for (message of messageSelection; track message) {
-        <mat-chip-option [selected]="message.selected"
-          (selectionChange)="onSelectionChange($event, formGroup)">{{message.selection}}</mat-chip-option>
-        }
-      </mat-chip-listbox>
+      <div class="test">
+        <mat-chip-listbox class="mat-mdc-chip-set-stacked chips" aria-label="Message Selection">
+          @for (message of messageSelection; track message) {
+          <mat-chip-option [selected]="message.selected"
+            (selectionChange)="onSelectionChange($event, formGroup)">{{message.selection}}</mat-chip-option>
+          }
+        </mat-chip-listbox>
+      </div>
+      <br>
       <mat-form-field class="example-full-width">
         <mat-label>Betreff</mat-label>
         <input matInput formControlName="subject" maxlength="50" placeholder="Zusage / Absage">
@@ -27,30 +32,26 @@
         <textarea matInput formControlName="message" minlength="10" maxlength="500" rows="6"
           placeholder="Sehr gerne sage ich zu!&#10;Ich muss leider absagen, weil...&#10;&#10;Liebe Grüße,&#10;Max Mustermann"></textarea>
       </mat-form-field>
+      <button mat-fab extended class="submit-button" [disabled]="!isFormGroupValid(formGroup.status)"
+        (click)="sendEmail(formGroup)">
+        <mat-icon>favorite</mat-icon>
+        Abschicken
+      </button>
     </form>
-
-    <button mat-fab extended style="margin: 1rem" [disabled]="!isFormGroupValid(formGroup.status)"
-      (click)="sendEmail(formGroup)">
-      <mat-icon>favorite</mat-icon>
-      Abschicken
-    </button>
   </mat-tab>
-  <mat-tab [label]="tab2">
+  <!--mat-tab [label]="tab2">
     <div style="width: 90vw"></div>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-  </mat-tab>
+  </mat-tab-->
   <mat-tab [label]="tab3">
-    <div style="width: 90vw"></div>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
-    <p>test</p>
+    <div style="width: 90vw;"></div>
+    <div class="myIframe">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7456316114503!2d13.446413877578362!3d52.50184393757253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84fd6f3d83d95%3A0x5d831aff6784e275!2sSpreespeicher%20Eventlocation!5e0!3m2!1sde!2sde!4v1740171558835!5m2!1sde!2sde"
+        width="100%" height="818px" allowfullscreen="" loading="lazy" frameBorder="0"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </mat-tab>
+  <mat-tab [label]="tab4">
+    <div style="width: 90vw; height: 820px"></div>
   </mat-tab>
 </mat-tab-group>

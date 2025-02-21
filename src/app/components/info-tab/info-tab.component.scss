@@ -1,9 +1,38 @@
 .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+    height: 820px;
+    max-width: 600px;
 }
 
 .example-full-width {
-    width: 100%;
+    display: block;
+}
+
+.chips {
+    margin-right: -8px;
+}
+
+.test {
+    overflow: hidden;
+}
+
+.submit-button {
+    display: flex;
+    justify-self: end;
+    margin-bottom: 16px;
+}
+
+.myIframe {
+    position: relative;
+    overflow: auto;
+    height: 820px;
+    -webkit-overflow-scrolling: touch;
+    /*<<--- THIS IS THE KEY*/
+    border: solid black 1px;
+}
+
+.myIframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 818px;
 }

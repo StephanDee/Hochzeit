@@ -20,6 +20,7 @@ export class InfoTabComponent implements OnInit {
   public tab1: string = 'Zusagen / Absagen';
   public tab2: string = 'Ablauf';
   public tab3: string = 'Location';
+  public tab4: string = 'Parken';
   protected formGroup: FormGroup;
   readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
 
@@ -38,7 +39,6 @@ export class InfoTabComponent implements OnInit {
     let selectedChipLabel: string = event.source['_textElement']?.innerText;
 
     if (!isNil(selectedChipLabel)) {
-      console.log(selectedChipLabel);
       if (selectedChipLabel?.match('Zusagen') && event.selected) {
         formGroup.controls['subject'].patchValue('Zusage');
         formGroup.controls['message'].patchValue('Sehr gerne sage ich zu!\n\nLiebe Grüße,\n');
@@ -66,6 +66,6 @@ export class InfoTabComponent implements OnInit {
     const encodedCount = encodeURI(formGroup.controls['count'].value + '\n\n');
     const encodedSubject = encodeURI(formGroup.controls['subject'].value);
     const encodedMessage = encodeURI(formGroup.controls['message'].value);
-    window.location.href = `mailto:duenkel.stephan@gmail.com?subject=${encodedSubject}&body=${encodedTitleNames + encodedNames + encodedTitleCount + encodedCount + encodedMessage}`;
+    window.location.href = `mailto:duenkel.stephan@gmail.com;yongyong@gmail.com?subject=${encodedSubject}&body=${encodedTitleNames + encodedNames + encodedTitleCount + encodedCount + encodedMessage}`;
   }
 }
