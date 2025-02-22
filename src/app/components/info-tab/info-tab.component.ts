@@ -17,7 +17,7 @@ class ChipsSelection {
   styleUrls: ['./info-tab.component.scss']
 })
 export class InfoTabComponent implements OnInit {
-  public tab1: string = 'Zusagen / Absagen';
+  public tab1: string = 'Zusage / Absage';
   public tab2: string = 'Ablauf';
   public tab3: string = 'Location';
   public tab4: string = 'Parken';
