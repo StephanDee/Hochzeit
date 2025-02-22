@@ -23,9 +23,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
   protected subscription: Subscription = new Subscription();
   public test: string = 'asd';
 
-  constructor() {
-    // test
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.subscription.add(this.countdownTimer(this.date).subscribe((countdownDate: CountdownDate) => {

@@ -13,6 +13,7 @@ export class PrimengGalleriaComponent implements OnInit {
 
   @ViewChild('PrimengGalleriaContainer') public pgContainer: ElementRef;
   @Input() public autoplay: boolean = true;
+  @Input() public transitionInterval: number = 3000;
   @Input() public showThumbnails: boolean = true;
   @Input() public showItemNavigators: boolean = true;
   @Input() public numVisible: number = 3;

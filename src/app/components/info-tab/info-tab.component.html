@@ -8,7 +8,7 @@
       <br>
       <mat-form-field class="example-full-width">
         <mat-label>Vor und Nachnamen aller Personen</mat-label>
-        <textarea matInput formControlName="names" minLength="3" maxlength="200" rows="5"
+        <textarea matInput formControlName="names" minLength="3" maxlength="200" rows="5" style="resize: none"
           placeholder="Max Mustermann,&#10;Petra Mustermann,&#10;..."></textarea>
       </mat-form-field>
       <mat-form-field class="example-full-width">
@@ -30,7 +30,7 @@
       </mat-form-field>
       <mat-form-field class="example-full-width">
         <mat-label>Deine Nachricht an uns</mat-label>
-        <textarea matInput formControlName="message" minlength="10" maxlength="500" rows="6"
+        <textarea matInput formControlName="message" minlength="10" maxlength="500" rows="6" style="resize: none"
           placeholder="Sehr gerne sage ich zur Hochzeit zu!&#10;Ich muss leider zur Hochzeit absagen, weil...&#10;&#10;Liebe Grüße,&#10;Max Mustermann"></textarea>
       </mat-form-field>
       <button mat-fab extended class="submit-button" [disabled]="!isFormGroupValid(formGroup.status)"
@@ -53,6 +53,39 @@
     </div>
   </mat-tab>
   <mat-tab [label]="tab4">
-    <div style="width: 90vw; height: 820px"></div>
+    <div style="width: 90vw; height: 820px">
+      <div class="text">
+        <br>
+        <h1>Spreespeicher Eventlocation</h1>
+        <br>
+        <p><strong>Parkplätze in der Nähe</strong></p>
+        <br>
+        <span>Parkhaus direkt bei der Eventlocation <a
+            href="https://maps.app.goo.gl/BKLRmyHD1ZpthsFo6">nHowParking</a>.</span>
+        <br>
+        <span>Öffentliche Parkplätze gegenüber der Eventlocation <a
+            href="https://maps.app.goo.gl/FfA68qVud9zjRY7N6">Ehrenbergstraße</a>.</span>
+        <br>
+        <br>
+        <p><strong>Parkplätze in der Umgebung</strong></p>
+        <br>
+        <span>Parkhaus direkt bei der Uber Arena <a href="https://maps.app.goo.gl/ZTDfvEZvBJA5wUMj8">Parkhaus East
+            SideMall</a>.</span>
+      </div>
+      <br>
+      <div class="text">
+        <br>
+        <h1>Standesamt Berlin Tempelhof/Schöneberg</h1>
+        <br>
+        <p><strong>Parkplätze in der Nähe</strong></p>
+        <br>
+        <span>Öffentliche am Rauthaus <a href="https://maps.app.goo.gl/J3TiMyK7LECRgpjD6">Rathaus Parkplatz</a>.</span>
+        <br>
+        <br>
+        <p><strong>Parkplätze in der Umgebung</strong></p>
+        <br>
+        <span>In unmittelbarer Umgebung gibt es überall öffentliche Parkplätze.</span>
+      </div>
+    </div>
   </mat-tab>
 </mat-tab-group>
