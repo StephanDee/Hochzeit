@@ -3,7 +3,8 @@
     <div style="width:90vw"></div>
     <form [formGroup]="formGroup" class="example-form center">
       <br>
-      <p>Schreib uns eine Nachricht falls du dich, deine Begleitung oder deine Familie an oder abmelden möchtest.</p>
+      <p>Schreibe uns eine Nachricht falls du dich, deine Begleitung oder deine Familie zur Hochzeit an oder abmelden
+        möchtest.</p>
       <br>
       <mat-form-field class="example-full-width">
         <mat-label>Vor und Nachnamen aller Personen</mat-label>
@@ -30,7 +31,7 @@
       <mat-form-field class="example-full-width">
         <mat-label>Deine Nachricht an uns</mat-label>
         <textarea matInput formControlName="message" minlength="10" maxlength="500" rows="6"
-          placeholder="Sehr gerne sage ich zu!&#10;Ich muss leider absagen, weil...&#10;&#10;Liebe Grüße,&#10;Max Mustermann"></textarea>
+          placeholder="Sehr gerne sage ich zur Hochzeit zu!&#10;Ich muss leider zur Hochzeit absagen, weil...&#10;&#10;Liebe Grüße,&#10;Max Mustermann"></textarea>
       </mat-form-field>
       <button mat-fab extended class="submit-button" [disabled]="!isFormGroupValid(formGroup.status)"
         (click)="sendEmail(formGroup)">

@@ -1,7 +1,7 @@
 // Add background for different screen sizes
 
 main {
-    padding: 1rem;
+    padding-top: 1rem;
     // background-image: url("../../../../public/hochzeit-main-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,4 +14,16 @@ main {
 .main-container {
     padding-top: 64px;
     padding-bottom: 64px;
+}
+
+.time-background {
+    background-image: url("../../../../public/images/carmen-alarcon-7yQ1yYsH2w0-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 164px;
+    padding-bottom: 164px;
 }

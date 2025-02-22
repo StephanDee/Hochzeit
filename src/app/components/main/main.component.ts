@@ -8,13 +8,12 @@ import { CommonUtilsService } from '../../shared/services/common-utils.service';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  public date: string = '08/02/2025 5:00 PM';
+  public countdownTitle: string = 'Der Countdown läuft...';
   protected title = 'hochzeit';
   protected pgImages = [];
 
   constructor(protected commonUtilsService: CommonUtilsService/* protected imageService: ImageService */) { }
 
-  ngOnInit() {
-    this.commonUtilsService.countdownTimer('08/02/2025 5:00 PM', 'countdown');
-    // this.images = this.imageService.getImages().filter((image) => image.itemImageSrc.contains('xxxx.jpg') || image.itemImageSrc.contains('xxxx.jpg'));
-  }
+  ngOnInit() { }
 }

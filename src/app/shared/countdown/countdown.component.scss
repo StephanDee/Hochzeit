@@ -1,0 +1,43 @@
+.countdown {
+    background-color: rgb(255, 233, 247, 0.8);
+    padding: 16px;
+    border-radius: 16px;
+}
+
+.countwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+.countbox {
+    display: block;
+    justify-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100px;
+    margin: 8px;
+    border-radius: 16px;
+}
+
+.count {
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 16px;
+    height: 66px;
+    margin: 4px 8px 4px 8px;
+    padding: 0 8px 8px 8px;
+}
+
+.seperator {
+    padding-top: 56px;
+}
+
+h1.number {
+    font-size: 6rem;
+}
+
+h1.label {
+    font-size: 1.8rem;
+    padding-top: 30px;
+}

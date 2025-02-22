@@ -21,6 +21,7 @@ import Aura from '@primeng/themes/aura';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CountdownComponent } from './shared/countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MainComponent,
     FooterComponent,
     PrimengGalleriaComponent,
-    InfoTabComponent
+    InfoTabComponent,
+    CountdownComponent
   ],
   exports: [
-    MainComponent,
     FooterComponent,
     PrimengGalleriaComponent,
-    InfoTabComponent
+    CountdownComponent
   ],
   imports: [
     BrowserModule,

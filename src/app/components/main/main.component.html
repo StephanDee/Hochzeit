@@ -3,8 +3,10 @@
   <div class="center main-container">
     <app-primeng-galleria></app-primeng-galleria>
   </div>
-  <div class="center main-container">
-    <h1 id="countdown"></h1>
+  <div class="time-background">
+    <div class="center main-container">
+      <app-countdown [title]="countdownTitle" [date]="date"></app-countdown>
+    </div>
   </div>
   <div class="center main-container">
     <app-info-tab></app-info-tab>

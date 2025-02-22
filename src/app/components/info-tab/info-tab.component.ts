@@ -22,7 +22,7 @@ export class InfoTabComponent implements OnInit {
   public tab3: string = 'Location';
   public tab4: string = 'Parken';
   protected formGroup: FormGroup;
-  readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
+  protected readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
 
   constructor() { }
 
@@ -31,7 +31,7 @@ export class InfoTabComponent implements OnInit {
       names: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(200)]),
       count: new FormControl(1, [Validators.required, Validators.maxLength(2), Validators.min(1), Validators.max(5)]),
       subject: new FormControl('Zusage', [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
-      message: new FormControl('Sehr gerne sage ich zu!\n\nLiebe Grüße,\n', [Validators.required, Validators.minLength(10), Validators.maxLength(500)])
+      message: new FormControl('Sehr gerne sage ich zur Hochzeit zu!\n\nLiebe Grüße,\n', [Validators.required, Validators.minLength(10), Validators.maxLength(500)])
     });
   }
 
@@ -41,10 +41,10 @@ export class InfoTabComponent implements OnInit {
     if (!isNil(selectedChipLabel)) {
       if (selectedChipLabel?.match('Zusagen') && event.selected) {
         formGroup.controls['subject'].patchValue('Zusage');
-        formGroup.controls['message'].patchValue('Sehr gerne sage ich zu!\n\nLiebe Grüße,\n');
+        formGroup.controls['message'].patchValue('Sehr gerne sage ich zur Hochzeit zu!\n\nLiebe Grüße,\n');
       } else if (selectedChipLabel?.match('Absagen') && event.selected) {
         formGroup.controls['subject'].patchValue('Absage');
-        formGroup.controls['message'].patchValue('Ich muss leider absagen, weil...\n\nLiebe Grüße,\n');
+        formGroup.controls['message'].patchValue('Ich muss leider zur Hochzeit absagen, weil...\n\nLiebe Grüße,\n');
       } else if (selectedChipLabel?.match('Sonstiges') && event.selected) {
         formGroup.controls['subject'].patchValue('Sonstiges');
         formGroup.controls['message'].patchValue('');
