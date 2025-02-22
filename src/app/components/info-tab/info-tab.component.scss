@@ -1,6 +1,7 @@
 .example-form {
     width: 100%;
     max-width: 600px;
+    height: 820px;
 }
 
 .example-full-width {
@@ -16,6 +17,7 @@
 
 .chips-wrapper {
     overflow: hidden;
+    margin: 0 8px 0 8px;
 }
 
 .chips {
@@ -44,6 +46,6 @@
 
 @media screen and (max-width: 650px) {
     .myIframe iframe {
-        height: 448px;
+        height: 600px !important;
     }
 }
