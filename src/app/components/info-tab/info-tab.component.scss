@@ -9,6 +9,13 @@
     margin: 0 8px 0 8px;
 }
 
+.tabgroup {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
 .text {
     width: 85vw !important;
     max-width: 600px !important;
@@ -27,7 +34,7 @@
 .submit-button {
     display: flex;
     justify-self: end;
-    margin: 0 8px 16px 8px;
+    margin: 0 8px 8px 8px;
 }
 
 .myIframe {

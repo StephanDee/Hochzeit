@@ -18,9 +18,8 @@ class ChipsSelection {
 })
 export class InfoTabComponent implements OnInit {
   public tab1: string = 'Zusage / Absage';
-  public tab2: string = 'Ablauf';
-  public tab3: string = 'Location';
-  public tab4: string = 'Parken';
+  public tab2: string = 'Location';
+  public tab3: string = 'Parken';
   protected formGroup: FormGroup;
   protected readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
 
