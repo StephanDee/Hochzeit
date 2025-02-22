@@ -1,18 +1,25 @@
 .example-form {
-    height: 820px;
+    width: 100%;
     max-width: 600px;
 }
 
 .example-full-width {
     display: block;
+    margin: 0 8px 0 8px;
+}
+
+.text {
+    width: 85vw !important;
+    max-width: 600px !important;
+    margin: 0 8px 0 8px;
+}
+
+.chips-wrapper {
+    overflow: hidden;
 }
 
 .chips {
     margin-right: -8px;
-}
-
-.test {
-    overflow: hidden;
 }
 
 .submit-button {
@@ -26,8 +33,6 @@
     overflow: auto;
     height: 820px;
     -webkit-overflow-scrolling: touch;
-    /*<<--- THIS IS THE KEY*/
-    border: solid black 1px;
 }
 
 .myIframe iframe {
@@ -35,4 +40,10 @@
     top: 0;
     left: 0;
     height: 818px;
+}
+
+@media screen and (max-width: 650px) {
+    .myIframe iframe {
+        height: 448px;
+    }
 }

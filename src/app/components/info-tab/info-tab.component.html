@@ -3,8 +3,8 @@
     <div style="width:90vw"></div>
     <form [formGroup]="formGroup" class="example-form center">
       <br>
-      <p>Schreibe uns eine Nachricht falls du dich, deine Begleitung oder deine Familie zur Hochzeit an oder abmelden
-        möchtest.</p>
+      <p class="text">Schreibe uns eine Nachricht falls du dich, deine Begleitung oder deine Familie zur Hochzeit an
+        oder abmelden möchtest.</p>
       <br>
       <mat-form-field class="example-full-width">
         <mat-label>Vor und Nachnamen aller Personen</mat-label>
@@ -15,7 +15,7 @@
         <mat-label>Personen Anzahl</mat-label>
         <input matInput formControlName="count" maxlength="2" min="1" max="5" type="number" placeholder="1">
       </mat-form-field>
-      <div class="test">
+      <div class="chips-wrapper">
         <mat-chip-listbox class="mat-mdc-chip-set-stacked chips" aria-label="Message Selection">
           @for (message of messageSelection; track message) {
           <mat-chip-option [selected]="message.selected"

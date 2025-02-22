@@ -102,6 +102,10 @@ p {
     justify-self: center;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .divider {
     width: 1px;
     background: var(--red-to-pink-to-purple-vertical-gradient);
@@ -121,5 +125,13 @@ p {
         margin-block: 1.5rem;
     }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

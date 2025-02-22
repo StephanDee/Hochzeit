@@ -21,7 +21,7 @@ export class CountdownComponent implements OnInit, OnDestroy {
   @Input() public date: string = new Date().toString();
   protected countdown: CountdownDate = new CountdownDate(0, 0, 0, 0);
   protected subscription: Subscription = new Subscription();
-  public test: string = 'asdasdasasasdadasdasdasddasdasdasasdasddasdasdasdasasda';
+  public test: string = 'asd';
 
   constructor() {
     // test

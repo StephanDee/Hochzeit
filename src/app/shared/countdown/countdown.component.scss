@@ -41,3 +41,24 @@ h1.label {
     font-size: 1.8rem;
     padding-top: 30px;
 }
+
+@media screen and (max-width: 600px) {
+    .countbox {
+        width: 60px;
+        margin: 8px;
+    }
+
+    .seperator {
+        padding-top: 56px;
+    }
+
+    h1.number {
+        font-size: 3rem;
+        padding-top: 20px;
+    }
+
+    h1.label {
+        font-size: 1.4rem;
+        padding-top: 24px;
+    }
+}
