@@ -49,6 +49,11 @@ body {
     src: url("../public/fonts/magnolia/MagnoliaLight.woff") format('woff');
 }
 
+@font-face {
+    font-family: 'SouthernAirePersonalUseOnly';
+    src: url("../public/fonts/southernaire/SouthernAire_Personal_Use_Only.woff") format('woff');
+}
+
 h1 {
     font-size: 3.125rem;
     color: var(--gold);

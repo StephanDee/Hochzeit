@@ -8,7 +8,7 @@
     position: relative;
     overflow: hidden;
     margin: 20px 20px;
-    padding-top: 86px;
+    padding: 10px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
@@ -60,6 +60,15 @@
     background-position: center center;
     background-image: url("../../../../public/images/pawel-czerwinski-D9czFsZwLSg-unsplash.jpg");
     height: 100vh !important;
+}
+
+.logo-background {
+    position: relative;
+    background-image: url("../../../../public/images/Logo.svg");
+    font-family: 'SouthernAirePersonalUseOnly';
+    height: 280px;
+    width: 280px;
+    z-index: 1;
 }
 
 .titlebar-background {
@@ -148,9 +157,14 @@
 }
 
 @media screen and (max-width: 650px) {
+    .logo-background {
+        height: 124px;
+        width: 124px;
+    }
+
     .title-wrapper {
         margin: 8px 8px;
-        padding-top: 6px;
+        padding: 8px;
         width: 140px;
         height: 140px;
         border-radius: 70px;
@@ -161,7 +175,7 @@
     }
 
     .titlebar-background {
-        background-image: url("../../../../public/images/titlebar_mini.svg");
+        // background-image: url("../../../../public/images/titlebar_mini.svg");
         margin-top: calc(72vh - 148px);
         height: 28vh;
     }
