@@ -29,7 +29,6 @@ export class InfoTabComponent implements OnInit {
   public tab2: string = 'Location';
   public tab3: string = 'Parken';
   protected formGroup: FormGroup;
-  public Test: any = 'assadasdasdsasdasdasdaddasd';
   protected readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
 
   constructor() { }
@@ -86,7 +85,7 @@ export class InfoTabComponent implements OnInit {
     } else if (event.type === EventType.ActionTouch.TOUCHEND) {
       const direction: number[] = [event.changedTouches[0].clientX - swipeCoord.clientX, event.changedTouches[0].clientY - swipeCoord.clientY];
       const duration: number = time - swipeTime;
-      const longEnough: boolean = Math.abs(direction[0]) > 40;
+      const longEnough: boolean = Math.abs(direction[0]) > 80;
       const horizontalEnough: boolean = Math.abs(direction[0]) > Math.abs(direction[1] * 3);
 
       if (duration < 1000 && longEnough && horizontalEnough) {

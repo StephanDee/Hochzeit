@@ -1,4 +1,4 @@
-<mat-tab-group class="tabgroup" animationDuration="1000ms" [selectedIndex]="selectedIndex"
+<mat-tab-group class="tabgroup" animationDuration="1000ms" [(selectedIndex)]="selectedIndex"
   (touchstart)="onSwipe($event, swipeCoord, swipeTime)" (touchend)="onSwipe($event, swipeCoord, swipeTime)">
   <mat-tab [label]="tab1">
     <div style="width:90vw"></div>
@@ -72,7 +72,7 @@
           </li>
         </ul>
       </div>
-      <div class="text center">
+      <!--div class="text center">
         <br>
         <h1>Standesamt Berlin Tempelhof/Schöneberg</h1>
         <br>
@@ -94,7 +94,7 @@
       <div class="text center">
         <br>
         <span style="font-size: 0.8rem;">*Parkplätze können kostenpflichtig sein.</span>
-      </div>
+      </div-->
     </div>
   </mat-tab>
 </mat-tab-group>
