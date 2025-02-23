@@ -11,7 +11,7 @@
     padding-top: 86px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
     width: 300px;
     height: 300px;
     border-radius: 150px;
@@ -25,7 +25,6 @@
 }
 
 .background {
-    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -34,35 +33,41 @@
 }
 
 .welcome-1-background {
+    background-position: center center;
     background-image: url("../../../../public/images/1-stacie-ong-bVDTiWORf5g-unsplash.jpg");
     height: 100vh !important;
 }
 
 .welcome-2-background {
-    background-image: url("../../../../public/images/2-20190306_141851.jpg");
+    background-position: center -1200px;
+    background-image: url("../../../../public/images/2-20240529_153121.jpg");
     height: 100vh !important;
 }
 
 .welcome-3-background {
+    background-position: center -500px;
     background-image: url("../../../../public/images/3-20240529_152706.jpg");
     height: 100vh !important;
 }
 
 .time-background {
+    background-position: center center;
     background-image: url("../../../../public/images/carmen-alarcon-7yQ1yYsH2w0-unsplash.jpg");
     height: 100vh !important;
 }
 
 .infotab-background {
+    background-position: center center;
     background-image: url("../../../../public/images/pawel-czerwinski-D9czFsZwLSg-unsplash.jpg");
     height: 100vh !important;
 }
 
 .titlebar-background {
+    background-position: bottom center;
     position: relative;
-    background-image: url("../../../../public/images/titlebar.svg");
-    margin-top: calc(78vh - 316px);
-    height: 22vh;
+    background-image: url("../../../../public/images/titlebar_mini.svg");
+    margin-top: calc(60vh - 316px);
+    height: 60vh;
     z-index: 1;
 }
 
@@ -79,7 +84,6 @@
     height: 100%;
     inset: 0;
     background-size: cover;
-    background-position: center center;
     opacity: 0;
     animation-name: fade-zoom;
     animation-duration: 18s;
@@ -131,6 +135,18 @@
     }
 }
 
+@media screen and (max-width: 2000px) {
+    .welcome-2-background {
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .welcome-3-background {
+        background-position: center center;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .title-wrapper {
         margin: 8px 8px;
@@ -145,7 +161,8 @@
     }
 
     .titlebar-background {
-        margin-top: calc(84vh - 148px);
-        height: 16vh;
+        background-image: url("../../../../public/images/titlebar_mini.svg");
+        margin-top: calc(72vh - 148px);
+        height: 28vh;
     }
 }
