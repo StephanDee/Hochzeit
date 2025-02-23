@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { GalleriaResponsiveOptions } from 'primeng/galleria';
-import { PrimengGalleriaService } from '../services/primeng-galleria.service';
+import { PrimengGalleriaService } from '../../services/primeng-galleria.service';
 import { isNil } from 'lodash-es';
 
 @Component({

@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { MatChipSelectionChange } from '@angular/material/chips';
+import { MatTab, MatTabGroup } from '@angular/material/tabs';
+import { EventType } from '../../shared/enums/EventType';
 import { isNil } from 'lodash-es';
 
 class ChipsSelection {
@@ -17,10 +19,17 @@ class ChipsSelection {
   styleUrls: ['./info-tab.component.scss']
 })
 export class InfoTabComponent implements OnInit {
+  @ViewChild(MatTabGroup) protected matTabGroup: MatTabGroup;
+  @ViewChild(MatTab) protected MatTabs: MatTab[];
+
+  @Input() public selectedIndex: number = 0;
+  public swipeCoord: Touch;
+  public swipeTime: any;
   public tab1: string = 'Zusage / Absage';
   public tab2: string = 'Location';
   public tab3: string = 'Parken';
   protected formGroup: FormGroup;
+  public Test: any = 'assadasdasdsasdasdasdaddasd';
   protected readonly messageSelection: ChipsSelection[] = [new ChipsSelection(true, 'Zusagen'), new ChipsSelection(false, 'Absagen'), new ChipsSelection(false, 'Sonstiges')];
 
   constructor() { }
@@ -66,5 +75,38 @@ export class InfoTabComponent implements OnInit {
     const encodedSubject = encodeURI(formGroup.controls['subject'].value);
     const encodedMessage = encodeURI(formGroup.controls['message'].value);
     window.location.href = `mailto:duenkel.stephan@gmail.com;yongyong@gmail.com?subject=${encodedSubject}&body=${encodedTitleNames + encodedNames + encodedTitleCount + encodedCount + encodedMessage}`;
+  }
+
+  onSwipe(event: TouchEvent, swipeCoord: Touch, swipeTime: any): void {
+    const time: any = new Date().getTime();
+
+    if (event.type === EventType.ActionTouch.TOUCHSTART) {
+      this.swipeCoord = event.changedTouches[0];
+      this.swipeTime = time;
+    } else if (event.type === EventType.ActionTouch.TOUCHEND) {
+      const direction: number[] = [event.changedTouches[0].clientX - swipeCoord.clientX, event.changedTouches[0].clientY - swipeCoord.clientY];
+      const duration: number = time - swipeTime;
+      const longEnough: boolean = Math.abs(direction[0]) > 40;
+      const horizontalEnough: boolean = Math.abs(direction[0]) > Math.abs(direction[1] * 3);
+
+      if (duration < 1000 && longEnough && horizontalEnough) {
+        const swipeDirection: string = direction[0] < 0 ? EventType.ActionSwipe.SWIPERIGHT : EventType.ActionSwipe.SWIPELEFT;
+
+        if (swipeDirection.match(EventType.ActionSwipe.SWIPERIGHT)) {
+          const isFirst: boolean = this.selectedIndex === 0;
+
+          if (this.selectedIndex <= 1) {
+            this.selectedIndex = isFirst ? 1 : this.selectedIndex + 1;
+          }
+
+        } else if (swipeDirection.match(EventType.ActionSwipe.SWIPELEFT)) {
+          const isLastIndex: boolean = this.selectedIndex >= 1;
+
+          if (isLastIndex) {
+            this.selectedIndex = this.selectedIndex - 1;
+          }
+        }
+      }
+    }
   }
 }
