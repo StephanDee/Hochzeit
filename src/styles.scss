@@ -54,6 +54,12 @@ body {
     src: url("../public/fonts/southernaire/SouthernAire_Personal_Use_Only.woff") format('woff');
 }
 
+.mdc-tab__text-label {
+    font-family: 'Gabriola';
+    font-size: 1.5rem;
+    color: var(--gold) !important;
+}
+
 h1 {
     font-size: 3.125rem;
     color: var(--gold);

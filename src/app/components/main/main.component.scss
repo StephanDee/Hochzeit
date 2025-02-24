@@ -3,12 +3,27 @@
     padding-bottom: 64px;
 }
 
+.textbox {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
+    padding: 36px 36px 36px 36px;
+    border-radius: 16px;
+    max-width: 516px;
+}
+
+.textbox p {
+    width: 85%;
+    font-family: "Gabriola";
+    font-size: 2rem;
+    color: var(--gold);
+}
+
 .title-wrapper {
     justify-self: start;
     position: relative;
     overflow: hidden;
     margin: 20px 20px;
-    padding: 10px;
+    padding: 14px 12px;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
@@ -53,7 +68,7 @@
 .time-background {
     background-position: center center;
     background-image: url("../../../../public/images/carmen-alarcon-7yQ1yYsH2w0-unsplash.jpg");
-    height: 100vh !important;
+    height: 90vh !important;
 }
 
 .infotab-background {
@@ -65,7 +80,7 @@
 .logo-background {
     position: relative;
     background-image: url("../../../../public/images/Logo.png");
-    height: 280px;
+    height: 272px;
     width: 280px;
     z-index: 1;
 }
@@ -157,13 +172,13 @@
 
 @media screen and (max-width: 650px) {
     .logo-background {
-        height: 124px;
+        height: 120px;
         width: 124px;
     }
 
     .title-wrapper {
         margin: 8px 8px;
-        padding: 8px;
+        padding: 10px 10px;
         width: 140px;
         height: 140px;
         border-radius: 70px;
@@ -177,5 +192,25 @@
         // background-image: url("../../../../public/images/titlebar_mini.svg");
         margin-top: calc(72vh - 148px);
         height: 28vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .time-background {
+        height: 116vh !important;
+    }
+
+    .textbox {
+        padding: 24px;
+        max-width: 356px;
+    }
+
+    .textbox p {
+        font-size: 1.7rem;
+    }
+
+    .main-container {
+        padding-top: 36px;
+        padding-bottom: 36px;
     }
 }
