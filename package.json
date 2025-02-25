@@ -2,6 +2,7 @@
   "name": "hochzeit",
   "version": "0.0.0",
   "scripts": {
+    "install": "npm install",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --base-href https://stephandee.github.io/Hochzeit/",
@@ -23,6 +24,7 @@
     "@angular/router": "^19.1.0",
     "@primeng/themes": "^19.0.0",
     "@types/lodash-es": "^4.17.12",
+    "lightgallery": "^2.8.2",
     "lodash-es": "^4.17.21",
     "primeicons": "^7.0.0",
     "primeng": "^19.0.6",

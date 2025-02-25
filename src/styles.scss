@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/lightgallery/scss/lightgallery';
+@import '../node_modules/lightgallery/scss/lg-zoom';
+
+
+.gallery-item {
+    margin: 5px;
+}
+
 body {
     margin: 0;
     --bright-blue: oklch(51.01% 0.274 263.83);
