@@ -3,9 +3,18 @@
 @import '../node_modules/lightgallery/scss/lightgallery';
 @import '../node_modules/lightgallery/scss/lg-zoom';
 
+.lightgallery {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .gallery-item {
-    margin: 5px;
+    width: 33%;
+}
+
+.gallery-image {
+    margin: 0 0 4px 4px;
+    width: calc(33vw - 8px);
 }
 
 body {
@@ -149,6 +158,15 @@ p {
 @media screen and (max-width: 600px) {
     .mdc-tab__text-label {
         font-size: 1.3rem;
+    }
+
+    .gallery-item {
+        width: 50%;
+    }
+
+    .gallery-image {
+        margin: 0 0 4px 4px;
+        width: calc(50vw - 14px);
     }
 }
 
