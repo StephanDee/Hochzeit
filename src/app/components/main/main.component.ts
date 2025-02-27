@@ -20,6 +20,7 @@ export class MainComponent implements OnInit {
     counter: false,
     plugins: [lgZoom]
   };
+
   onBeforeSlide = (detail: BeforeSlideDetail): void => {
     const { index, prevIndex } = detail;
     console.log(index, prevIndex);

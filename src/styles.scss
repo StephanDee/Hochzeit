@@ -11,14 +11,16 @@
 }
 
 .gallery-item {
-    width: 33%;
+    margin: 4px;
+    width: calc(33% - 8px);
 }
 
 .gallery-image {
     margin: -2px 0 -2px 0;
-    width: 33vw;
+    width: calc(33vw - 9px);
     max-height: 32vw;
     object-fit: cover !important;
+    border-radius: 16px;
 }
 
 body {
@@ -165,13 +167,15 @@ p {
     }
 
     .gallery-item {
-        width: 50%;
+        margin: 2px;
+        width: calc(50% - 4px);
     }
 
     .gallery-image {
         margin: -2px 0 -2px 0;
-        width: 50vw;
+        width: calc(50vw - 4px);
         max-height: 45vw;
+        border-radius: 8px;
     }
 }
 
