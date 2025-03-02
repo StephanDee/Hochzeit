@@ -85,7 +85,7 @@ export class InfoTabComponent implements OnInit {
     } else if (event.type === EventType.ActionTouch.TOUCHEND) {
       const direction: number[] = [event.changedTouches[0].clientX - swipeCoord.clientX, event.changedTouches[0].clientY - swipeCoord.clientY];
       const duration: number = time - swipeTime;
-      const longEnough: boolean = Math.abs(direction[0]) > 60;
+      const longEnough: boolean = Math.abs(direction[0]) > 40;
       const horizontalEnough: boolean = Math.abs(direction[0]) > Math.abs(direction[1] * 3);
 
       if (duration < 1000 && longEnough && horizontalEnough) {
