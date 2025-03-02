@@ -18,9 +18,10 @@
 .gallery-image {
     margin: -2px 0 -2px 0;
     width: calc(33vw - 9px);
+    min-height: 400px;
     max-height: 32vw;
     object-fit: cover !important;
-    border-radius: 16px;
+    // border-radius: 16px;
 }
 
 body {
@@ -174,8 +175,9 @@ p {
     .gallery-image {
         margin: -2px 0 -2px 0;
         width: calc(50vw - 4px);
+        min-height: 200px;
         max-height: 45vw;
-        border-radius: 8px;
+        // border-radius: 8px;
     }
 }
 

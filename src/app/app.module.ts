@@ -24,6 +24,7 @@ import { PrimengGalleriaComponent } from './shared/components/primeng-galleria/p
 import { LightgalleryModule } from 'lightgallery/angular';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
 import { CountdownComponent } from './shared/components/countdown/countdown.component';
+import { RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { CountdownComponent } from './shared/components/countdown/countdown.comp
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    RouterOutlet,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
