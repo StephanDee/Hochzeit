@@ -22,7 +22,7 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void { }
 
   onClick(event: string): void {
-    let config: MatDialogConfig = { data: event, width: '400px' }
+    let config: MatDialogConfig = { autoFocus: false, data: event, width: '400px' }
     switch (event) {
       case this.items[0].title: {
         this.matDialog.open(PrepareDialogComponent, config);
