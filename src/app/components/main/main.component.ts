@@ -29,8 +29,8 @@ export class MainComponent implements OnInit {
    * @param detail Slide details
    */
   onBeforeSlide = (detail: BeforeSlideDetail): void => {
-    const { index, prevIndex } = detail;
-    console.log(index, prevIndex);
+    // const { index, prevIndex } = detail;
+    // console.log(index, prevIndex);
   };
 
   ngOnInit() {

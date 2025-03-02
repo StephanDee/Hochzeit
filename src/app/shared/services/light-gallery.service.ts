@@ -29,59 +29,59 @@ export class LightGalleryService {
   public getImageData(): GalleryItem[] {
     return [
       new LightGalleryItem(
-        '../../../../public/images/gallery/1.JPG',
+        'images/gallery/1.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Warnemünde - Unsere erste Reise')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/2.JPG',
+        'images/gallery/2.JPG',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Warnemünde - Unsere erste Reise')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/3.JPG',
+        'images/gallery/3.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Sony Center')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/5.JPG',
+        'images/gallery/5.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Barcelona - Zum ersten mal zusammen im Ausland')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/4.JPG',
+        'images/gallery/4.JPG',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Nizza')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/6.JPG',
+        'images/gallery/6.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Köln - Unser erstes Liebesschloss - Wer findet es?')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/7.JPG',
+        'images/gallery/7.JPG',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Atlantic City - Unsere erste USA Reise nach New York')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/8.JPG',
+        'images/gallery/8.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - New York - Das erste mal im Central Park')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/9.JPG',
+        'images/gallery/9.JPG',
         this.convertSubtitleDataToHtml('Photo by - Hanh', 'Location - Hong Kong - Unsere große China Reise')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/10.JPG',
+        'images/gallery/10.JPG',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Fuertaventura - Unser erste Roadtrip')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/11.jpg',
+        'images/gallery/11.jpg',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Fuertaventura - Auf den Dünen')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/12.jpg',
+        'images/gallery/12.jpg',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Death Valley - Großer Roadtrip auf der West Küste der USA')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/13.jpg',
+        'images/gallery/13.jpg',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Korea - Tempelbesichtung im Hambok')
       ),
       new LightGalleryItem(
-        '../../../../public/images/gallery/14.jpg',
+        'images/gallery/14.jpg',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Korea - Unser Liebesschloss am Namsan Tower')
       )
     ];
