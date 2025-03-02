@@ -78,10 +78,14 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/13.jpg',
+        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Singapur - Gardens by the Bay')
+      ),
+      new LightGalleryItem(
+        'images/gallery/15.jpg',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Korea - Tempelbesichtung im Hambok')
       ),
       new LightGalleryItem(
-        'images/gallery/14.jpg',
+        'images/gallery/16.jpg',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Korea - Unser Liebesschloss am Namsan Tower')
       )
     ];
