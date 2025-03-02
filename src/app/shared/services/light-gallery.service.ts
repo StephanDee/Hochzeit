@@ -66,7 +66,7 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/10.JPG',
-        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Fuertaventura - Unser erste Roadtrip')
+        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Fuertaventura - Unser erster Roadtrip')
       ),
       new LightGalleryItem(
         'images/gallery/11.jpg',
