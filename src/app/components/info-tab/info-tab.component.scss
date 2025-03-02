@@ -40,7 +40,7 @@
 .myIframe {
     position: relative;
     overflow: auto;
-    height: 500px; // 820px;
+    height: 820px;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -48,5 +48,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 498px; // 818px; height="818px" in HTML
+    height: 820px;
+}
+
+@media screen and (max-width: 1399px) {
+    .myIframe {
+        height: 500px;
+    }
+
+    .myIframe iframe {
+        height: 500px;
+    }
 }
