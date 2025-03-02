@@ -33,7 +33,7 @@ export class MainComponent implements OnInit {
     // console.log(index, prevIndex);
   };
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.lightImages = this.lightGalleryService.getImageData();
   }
 }

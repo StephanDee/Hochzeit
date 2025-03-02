@@ -14,6 +14,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
 import Aura from '@primeng/themes/aura';
 import { providePrimeNG } from 'primeng/config';
 import { GalleriaModule } from 'primeng/galleria';
@@ -25,6 +26,9 @@ import { LightgalleryModule } from 'lightgallery/angular';
 import { InfoTabComponent } from './components/info-tab/info-tab.component';
 import { CountdownComponent } from './shared/components/countdown/countdown.component';
 import { RouterOutlet } from '@angular/router';
+import { DresscodeDialogComponent } from './components/dialogs/dresscode-dialog/dresscode-dialog.component';
+import { PrepareDialogComponent } from './components/dialogs/prepare-dialog/prepare-dialog.component';
+import { RulesDialogComponent } from './components/dialogs/rules-dialog/rules-dialog.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { RouterOutlet } from '@angular/router';
     FooterComponent,
     PrimengGalleriaComponent,
     InfoTabComponent,
-    CountdownComponent
+    CountdownComponent,
+    DresscodeDialogComponent,
+    PrepareDialogComponent,
+    RulesDialogComponent,
   ],
   exports: [
     FooterComponent,
@@ -56,6 +63,7 @@ import { RouterOutlet } from '@angular/router';
     MatSlideToggleModule,
     MatSnackBarModule,
     MatTabsModule,
+    MatDialogModule,
     GalleriaModule,
     LightgalleryModule
   ],

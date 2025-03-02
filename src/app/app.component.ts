@@ -7,7 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  constructor() {
-    alert('Die Seite befindet sich noch im Aufbau.');
-  }
+  constructor() { }
 }
