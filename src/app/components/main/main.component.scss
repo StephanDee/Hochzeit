@@ -55,8 +55,8 @@
 }
 
 .welcome-2-background {
-    background-position: center -1200px;
-    background-image: url("../../../../public/images/2-20240529_153121.jpg");
+    background-position: center center;
+    background-image: url("../../../../public/images/2-20240529_153121.jpeg");
     height: 100vh !important;
 }
 
@@ -159,12 +159,6 @@
 @media screen and (max-height: 900px) {
     .infotab-background {
         height: auto !important;
-    }
-}
-
-@media screen and (max-width: 2000px) {
-    .welcome-2-background {
-        background-position: -100px center;
     }
 }
 
