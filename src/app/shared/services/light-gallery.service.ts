@@ -36,10 +36,10 @@ export class LightGalleryService {
         'images/gallery/2.JPG',
         this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Warnemünde - Unsere erste Reise')
       ),
-      new LightGalleryItem(
+      /*new LightGalleryItem(
         'images/gallery/3.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Sony Center')
-      ),
+      ),*/
       new LightGalleryItem(
         'images/gallery/5.JPG',
         this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Barcelona - Zum ersten mal zusammen im Ausland')
@@ -54,7 +54,7 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/7.JPG',
-        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Atlantic City - Unsere erste USA Reise nach New York')
+        this.convertSubtitleDataToHtml('Photo by - Stephan', 'Location - Time Square - Unsere erste USA Reise nach New York')
       ),
       new LightGalleryItem(
         'images/gallery/8.JPG',
@@ -78,7 +78,7 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/13.jpg',
-        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Singapur - Gardens by the Bay')
+        this.convertSubtitleDataToHtml('Photo by - Yong Yong', 'Location - Singapur - Marina Bay')
       ),
       new LightGalleryItem(
         'images/gallery/15.jpg',
