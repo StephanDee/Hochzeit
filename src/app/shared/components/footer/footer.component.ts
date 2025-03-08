@@ -14,7 +14,7 @@ export class FooterComponent implements OnInit {
   public items: { title: string }[] = [
     { title: 'Vorbereitung' },
     { title: 'Dresscode' },
-    { title: 'Regeln' },
+    { title: 'Hausregeln' },
   ];
 
   constructor(protected matDialog: MatDialog) { }

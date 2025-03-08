@@ -76,6 +76,7 @@
     background-position: center center;
     background-image: url("../../../../public/images/pawel-czerwinski-D9czFsZwLSg-unsplash.jpg");
     height: 100vh !important;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 5px 24px;
 }
 
 .logo-background {
@@ -93,12 +94,14 @@
     margin-top: calc(60vh - 316px);
     height: 60vh;
     z-index: 1;
+
 }
 
 .bg-fade-wrapper {
     position: relative;
     overflow: hidden;
     height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 5px 24px;
 }
 
 .bg-fade {
