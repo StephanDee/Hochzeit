@@ -66,11 +66,11 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/10.JPG',
-        this.convertSubtitleDataToHtml('Fuertaventura', 'Unser erster Roadtrip')
+        this.convertSubtitleDataToHtml('Fuerteventura', 'Unser erster Roadtrip')
       ),
       new LightGalleryItem(
         'images/gallery/11.jpg',
-        this.convertSubtitleDataToHtml('Fuertaventura', 'Auf den Dünen Fuertaventuras')
+        this.convertSubtitleDataToHtml('Fuerteventura', 'Auf den Dünen Fuertaventuras')
       ),
       new LightGalleryItem(
         'images/gallery/12.jpg',
@@ -82,11 +82,11 @@ export class LightGalleryService {
       ),
       new LightGalleryItem(
         'images/gallery/15.jpg',
-        this.convertSubtitleDataToHtml('Korea', 'Tempelbesichtung im Hambok')
+        this.convertSubtitleDataToHtml('Seoul', 'Tempelbesichtung im Hambok')
       ),
       new LightGalleryItem(
         'images/gallery/16.jpg',
-        this.convertSubtitleDataToHtml('Korea', 'Unser Liebesschloss am Namsan Tower')
+        this.convertSubtitleDataToHtml('Seoul', 'Unser Liebesschloss am Namsan Tower')
       )
     ];
   }
