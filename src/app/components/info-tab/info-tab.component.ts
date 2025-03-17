@@ -73,7 +73,7 @@ export class InfoTabComponent implements OnInit {
     const encodedCount = encodeURI(formGroup.controls['count'].value + '\n\n');
     const encodedSubject = encodeURI(formGroup.controls['subject'].value);
     const encodedMessage = encodeURI(formGroup.controls['message'].value);
-    window.location.href = `mailto:duenkel.stephan@gmail.com;yongyong.on@gmail.com;?subject=${encodedSubject}&body=${encodedTitleNames + encodedNames + encodedTitleCount + encodedCount + encodedMessage}`;
+    window.location.href = `mailto:duenkel.stephan@gmail.com,yongyong.on@gmail.com?subject=${encodedSubject}&body=${encodedTitleNames + encodedNames + encodedTitleCount + encodedCount + encodedMessage}`;
   }
 
   onSwipe(event: TouchEvent, swipeCoord: Touch, swipeTime: any): void {
